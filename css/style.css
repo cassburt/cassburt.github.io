@@ -206,32 +206,32 @@ Projects
 
 .cd-projects-previews a {
   /* set a background image for each project */
-  background: #012A36 url(../img/homepage/hero-portrait-75.png) no-repeat center center;
+  background: #012A36 url(../img/hero-portrait-75.png) no-repeat center center;
   background-size: cover;
 }
 
 .cd-projects .preview-image {
   /* set a background image for each project */
-  background: #3C1518 url(../img/homepage/book-portrait.png) no-repeat center center;
+  background: #3C1518 url(../img/book-portrait.png) no-repeat center center;
   background-size: cover;
 }
 
 .cd-projects-previews li:nth-of-type(2) a,
 .cd-projects > li:nth-of-type(2) .preview-image {
-  background: #DAD4C8 url(../img/homepage/book-portrait.png) no-repeat center center;
+  background: #DAD4C8 url(../img/book-portrait.png) no-repeat center center;
   background-size: cover;
 }
 
 @media only screen and (min-width: 1024px) {
   .cd-projects-previews a {
     /* set a background image for each project */
-    background: #012A36 url(../img/homepage/hero-landscape-75.png) no-repeat center center;
+    background: #012A36 url(../img/hero-landscape-75.png) no-repeat center center;
     background-size: cover;
   }
 
   .cd-projects .preview-image {
     /* set a background image for each project */
-    background: #3C1518 url(../img/homepage/book-landscape.png) no-repeat center center;
+    background: #3C1518 url(../img/book-landscape.png) no-repeat center center;
     background-size: cover;
   }
 

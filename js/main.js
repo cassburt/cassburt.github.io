@@ -170,11 +170,12 @@ jQuery(document).ready(function($){
 		li.removeClass('selected content-visible')
 		navigationTrigger.addClass('nav-visible');
 		navigation.addClass('nav-visible');
+		navigation.addClass('nav-clickable');
 		//if(transitionsNotSupported) projectPreviews.addClass('slide-out');
 		//else slideToggleProjects(projectsPreviewWrapper.children('li'), -1, 0, true);
 	});
 
-	$('#book').on("click",function(){
+	$('#home-page').on("click",function(){
 		navigationTrigger.removeClass('nav-visible');
 		navigation.removeClass('nav-clickable nav-visible');
 		//var x = document.getElementById('pjct');
