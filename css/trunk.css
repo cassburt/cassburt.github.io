@@ -528,4 +528,9 @@ padding-bottom: 8px;}
 		display: none;
 	}
 
+	.section-title {
+		font-size: 58px;
+		color: #8f754f;
+	}
+
 }
