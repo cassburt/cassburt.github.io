@@ -1,114 +1,248 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-
-<title>40 Gavels</title>
-
-<meta charset="utf-8">
-<meta name="viewport" content="initial-scale=1.0,user-scalable=no,maximum-scale=1" media="(device-height: 568px)">
-<meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="HandheldFriendly" content="True">
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 
 <!-- Style Sheets -->
-<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/trunk.css" />
-<link rel="stylesheet" type="text/css" media="all" href="css/animate.css" />
-<link href="https://fonts.googleapis.com/css?family=Playfair+Display|Raleway|Special+Elite" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="css/jssocials/jssocials.css" />
-<link rel="stylesheet" type="text/css" href="css/jssocials/jssocials-theme-flat.css" />
-
+  <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css" />
+  <link rel="stylesheet" href='https://fonts.googleapis.com/css?family=Playfair+Display|Raleway:200,400|Special+Elite' rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=Inknut+Antiqua" rel="stylesheet">
+  <link rel='stylesheet' href='http://fonts.googleapis.com/icon?family=Material+Icons' type='text/css' />
+  <link rel="stylesheet" href="css/sidenav.css" type="text/css" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 <!-- Scripts -->
-<script src="https://use.fontawesome.com/8ba81ea2d1.js"></script>
-<script type="text/javascript">
-	if (typeof jQuery == 'undefined')
-		document.write(unescape("%3Cscript src='js/jquery-1.9.js'" +
-															"type='text/javascript'%3E%3C/script%3E"))
-</script>
-<!--[if lt IE 9]>
-<script src="js/html5shiv.js"></script>
-<![endif]-->
-<script src="js/jquery.sticky.js"></script>
-<script src="js/jssocials.min.js"></script>
-<script type="text/javascript" language="javascript" src="js/trunk.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://use.fontawesome.com/8ba81ea2d1.js"></script>
+  <script src="js/sidenav.js"></script>
+
+  <title>Forty Gavels</title>
 </head>
-
 <body>
+  <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
+    <div class="sidenav-brand">
+      BRAND
+    </div>
 
-<div class="container">
-	<header class="slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-		<ul id="navToggle" class="burger slide">    <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-			<li></li><li></li><li></li>
-		</ul>
-		<div class="logo-container">
-			<img class="logo" title="CWS-logo" src="img/logo.png">
-		</div>
-		<h1>CWS Publishing</h1>
-	</header>
-	<nav class="slide">
-		<ul class="nav-pos">
-			<li><a href="../index.html" class="active">HOME</a></li>
-			<li><a href="#">LINK POW!</a></li>
-			<li><a href="#">LINK THREE</a></li>
-			<li><a href="#">LINK FOUR</a></li>
-			<li><a href="#">LINK FIVE</a></li>
-			<li class="mobile-only"><a href="#">HIDDEN LINK</a></li>
-		</ul>
-	</nav>
-	<div class="content slide">     <!--	Add "slideRight" class to items that move right when viewing Nav Drawer  -->
-		<ul class="responsive">
-			<li class="header-section">
-				<div id="share"></div>
-				<div class=mobile-show>
-					<img class="mobile-hero" src="img/hero-mobile.jpg" alt="books">
-				</div>
-				<div class="hero">
-					<div class="hero-content">
-						<h1 class="section-title animated fadeInLeft">Forty Gavels</h1>
-						<p class="section-subtitle animated fadeInLeft">By Carl Soderstrom, Robert Soderstrom,<br> Chris Stevens, and Andrew Burt</p>
-						<p class="section-text animated fadeInUp"><span class="section-tilt">Forty Gavels</span> is the ground-breaking biography  of the American Labor Movement’s longest-serving leader, Reuben G. Soderstrom.  As President of the Illinois State Federation of Labor and the Illinois AFL-CIO from 1930-1970, Soderstrom led one of the nation’s largest labor organizations through the most challenging, exciting, and impactful events of the twentieth century.  From the horrors and sacrifice of the Great Depression and World War II to the triumphs of post-war recovery, from the great merger of the AFL-CIO and on to the struggles and successes of the Civil Rights Movement, Soderstrom was there, forging a legacy as organized labor’s most prolific voice. Adopting a year-by-year study of these years, this three-volume biography follows him to violent front-line strikes, rowdy union meetings in Chicago and all the way to policy summits at the White House, making Forty Gavels one of the most in-depth studies of the American Labor Movement.
-						</p>
-					</div><!--hero-content-->
-					<div class="hero-content-mobile">
-						<h1 class="section-title">Forty Gavels</h1>
-						<p class="section-subtitle">By Carl Soderstrom, Robert Soderstrom,<br> Chris Stevens, and Andrew Burt</p>
-						<input type="checkbox" class="read-more-state" id="post-1" />
-						<p class="section-text read-more-wrap"><span class="section-tilt">Forty Gavels</span> is the ground-breaking biography  of the American Labor Movement’s longest-serving leader, Reuben G. Soderstrom.  As President of the Illinois State Federation of Labor and the Illinois AFL-CIO from 1930-1970, Soderstrom led one of the nation’s largest labor organizations through<span class="read-more-target"> the most challenging, exciting, and impactful events of the twentieth century.  From the horrors and sacrifice of the Great Depression and World War II to the triumphs of post-war recovery, from the great merger of the AFL-CIO and on to the struggles and successes of the Civil Rights Movement, Soderstrom was there, forging a legacy as organized labor’s most prolific voice. Adopting a year-by-year study of these years, this three-volume biography follows him to violent front-line strikes, rowdy union meetings in Chicago and all the way to policy summits at the White House, making Forty Gavels one of the most in-depth studies of the American Labor Movement.
-						</span></span></p>
-						<label for="post-1" class="read-more-trigger"></label>
-					</div><!--hero-content-mobile-->
-					<div class="mobile-hide"></div>
-				</div><!--hero-->
-			</li>
-			<nav class="secondary-nav sticky-wrapper" id="sub-nav">
-				<ul>
-					<li><a class="active" href="#0">Intro</a></li>
-					<li><a href="#0">Facebook</a></li>
-					<li><a href="#0">Photos</a></li>
-					<li><a href="#0">Videos</a></li>
-					<li><a href="#0">Specs</a></li>
-					<li><a href="#0">Support</a></li>
-					<li><a href="#0">Compare</a></li>
-					<li><a href="#0">Buy</a></li>
-				</ul>
-			</nav> <!-- .cd-secondary-nav -->
-			<li class="body-section">
-				<p class="placefiller"><span class="section-tilt">Forty Gavels</span> is the ground-breaking biography  of the American Labor Movement’s longest-serving leader, Reuben G. Soderstrom.  <span class="read-more-target">As President of the Illinois State Federation of Labor and the Illinois AFL-CIO from 1930-1970, Soderstrom led one of the nation’s largest labor organizations through the most challenging, exciting, and impactful events of the twentieth century.  From the horrors and sacrifice of the Great Depression and World War II to the triumphs of post-war recovery, from the great merger of the AFL-CIO and on to the struggles and successes of the Civil Rights Movement, Soderstrom was there, forging a legacy as organized labor’s most prolific voice. Adopting a year-by-year study of these years, this three-volume biography follows him to violent front-line strikes, rowdy union meetings in Chicago and all the way to policy summits at the White House, making Forty Gavels one of the most in-depth studies of the American Labor Movement.
-				</span></span></p></p>
-			</li>
-			<li class="footer-section">
-				<p class="placefiller">FOOTER</p>
-			</li>
-		</ul>
+    <div class="sidenav-header">
+      Section Header
+      <small>secondary text</small>
+    </div>
 
-	</div><!--content slide-->
-</div><!--container-->
-<script>
-		$("#share").jsSocials({
-				showCount: false,
-				shares: ["email", "twitter", "facebook", "googleplus", "linkedin", "pinterest", "stumbleupon", "whatsapp"]
-		});
-</script>
+    <ul class="sidenav-menu">
+      <li>
+        <a href="javascript:;" data-sidenav-dropdown-toggle class="active">
+          <span class="sidenav-link-icon">
+            <i class="material-icons">store</i>
+          </span>
+          <span class="sidenav-link-title">Lorem ipsum</span>
+          <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+          </span>
+          <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_up</i>
+          </span>
+        </a>
+
+        <ul class="sidenav-dropdown" data-sidenav-dropdown>
+          <li><a href="javascript:;">Dolor sit amet</a></li>
+          <li><a href="javascript:;">Consectetur adipisicing</a></li>
+          <li><a href="javascript:;">Elit</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:;" data-sidenav-dropdown-toggle>
+          <span class="sidenav-link-icon">
+            <i class="material-icons">payment</i>
+          </span>
+          <span class="sidenav-link-title">Sed do eiusmod</span>
+          <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+          </span>
+          <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_up</i>
+          </span>
+        </a>
+
+        <ul class="sidenav-dropdown" data-sidenav-dropdown>
+          <li><a href="javascript:;">Tempor incididunt</a></li>
+          <li><a href="javascript:;">Labore</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:;" data-sidenav-dropdown-toggle>
+          <span class="sidenav-link-icon">
+            <i class="material-icons">shopping_cart</i>
+          </span>
+          <span class="sidenav-link-title">Dolore magna</span>
+          <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+          </span>
+          <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_up</i>
+          </span>
+        </a>
+
+        <ul class="sidenav-dropdown" data-sidenav-dropdown>
+          <li><a href="javascript:;">Aliqua</a></li>
+          <li><a href="javascript:;">Exercitation</a></li>
+          <li><a href="javascript:;">Minim veniam</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <span class="sidenav-link-icon">
+            <i class="material-icons">assignment_ind</i>
+          </span>
+          <span class="sidenav-link-title">Nostrud ullamco</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <span class="sidenav-link-icon">
+            <i class="material-icons">alarm</i>
+          </span>
+          <span class="sidenav-link-title">Commodo</span>
+        </a>
+      </li>
+    </ul>
+
+    <div class="sidenav-header">
+      Another Section Header
+    </div>
+
+    <ul class="sidenav-menu">
+      <li>
+        <a href="javascript:;" data-sidenav-dropdown-toggle>
+          <span class="sidenav-link-icon">
+            <i class="material-icons">date_range</i>
+          </span>
+          <span class="sidenav-link-title">Reprehenderit</span>
+          <span class="sidenav-dropdown-icon show" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_down</i>
+          </span>
+          <span class="sidenav-dropdown-icon" data-sidenav-dropdown-icon>
+            <i class="material-icons">arrow_drop_up</i>
+          </span>
+        </a>
+
+        <ul class="sidenav-dropdown" data-sidenav-dropdown>
+          <li><a href="javascript:;">Voluptate</a></li>
+          <li><a href="javascript:;">Excepteur</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <span class="sidenav-link-icon">
+            <i class="material-icons">backup</i>
+          </span>
+          <span class="sidenav-link-title">Occaecat</span>
+        </a>
+      </li>
+      <li>
+        <a href="javascript:;">
+          <span class="sidenav-link-icon">
+            <i class="material-icons">settings</i>
+          </span>
+          <span class="sidenav-link-title">Deserunt</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <header>
+    <nav class="nav-desktop" id-"main-nav">
+      <ul>
+        <li class="burger-menu">
+          <a href="javascript:;" id="sidenav-toggle">
+            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+        <li class=" owner-tag">CWS Publishing</li>
+        <li class="social-menu"><a href="www.google.com">Link One</a></li>
+      </ul>
+  </nav>
+  </header>
+  <content>
+    <div class="hero-container">
+      <div class="hero-content">
+        <h1>Forty Gavels</h1>
+        <h2>The Life of Reuben Soderstrom <br>and the Illinois AFL-CIO</h2>
+        <h3>By Carl Soderstrom, Robert Soderstrom,<br> Chris Stevens, and Andrew Burt</h3>
+        <div class="button-background">
+          <a href="www.google.com">
+            <div class="btn btn-one">
+              <span>Buy the 3-Volume Set Now!</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="introduction-container">
+      <div class="introduction-content">
+        <p><span class="leader">Forty Gavels </span>is the ground-breaking, three-volume biography of the American Labor Movement’s longest-serving leader, Reuben G. Soderstrom.  As President of the Illinois State Federation of Labor and the Illinois AFL-CIO from 1930-1970, Soderstrom led one of the nation’s largest labor organizations through the most challenging, exciting, and impactful events of the twentieth century.  From the horrors and sacrifice of the Great Depression and World War II to the triumphs of post-war recovery, from the great merger of the AFL-CIO and on to the struggles and successes of the Civil Rights Movement, Soderstrom was there, forging a legacy as organized labor’s most prolific voice. Adopting a year-by-year study of these years, this three-volume biography follows him to violent front-line strikes, rowdy union meetings in Chicago and all the way to policy summits at the White House, making Forty Gavels one of the most in-depth studies of the American Labor Movement.
+				</p>
+      </div>
+    </div>
+    <div class="praise-container">
+      <div class="praise-content">
+        <div class="praise-header">
+          <h1>Praise</h1>
+          <h2>for</h2>
+          <h1>Forty Gavels</h1>
+        </div>
+        <p class="quote">“Reuben Soderstrom’s legacy has been profound, lasting and inspiring.  I encourage everyone to enjoy the great history of our state organization captured in the beautiful pages of this book.  It is a real treasure worthy of the man it celebrates.”</p>
+        <p class="attribution">- Michael Carrigan, President, Illinois AFL-CIO</p>
+        <p class="quote">“We honor and welcome this biography of Brother Reuben Soderstrom, and salute his life-long dedication to improving the lives of working families both in Illinois and nationwide.”</p>
+        <p class="attribution">- Richard Trumka, President, AFL-CIO</p>
+        <p class="quote">“Reuben Soderstrom was a giant, one of the seminal figures of the labor movement at both the state and national level at a time when America was defined by transformative leaders and powerful institutions. It is profoundly gratifying to see his story—and the story of labor itself—told in such an in-depth and celebrated fashion. Teeming with extensive direct sources and photos, Forty Gavels will be an indispensable reference for students of organized labor and its role in the historical development of middle class America.”</p>
+        <p class="attribution">- Robert Bruno, Ph.D., Professor of Labor and Employment Relations, University of Illinois</p>
+      </div>
+    </div>
+    <div class="volume-previews">
+      <div class="volume-subtitle-container">
+        <h1>Preview</h1>
+      </div>
+      <div class="volume-image"></div>
+      <div class="volume-title-container">
+        <h1>Volume I.</h1>
+      </div>
+      <div class="volume-text-container">
+        <div class="volume-text-content">
+          <p><span class="leader">The life of Reuben G. Soderstrom</span> is the story of the American Labor Movement itself.  Born in 1888 to impoverished immigrants in rural Minnesota, 12-year-old Reuben is sent to the faraway city of Streator, Illinois to pay off the family’s debts.  He labors on trolley lines and in glass factories before finding steady work at a local newspaper print shop, where he becomes captivated by the news stories of the day and catches the attention of labor leader John Williams.  Under Williams’ tutelage, the young Soderstrom embarks on a decade of self-disciplined study at the public library and then barnstorms though the Midwest as a political activist and linotype apprentice.  Returning to Streator in 1918, the 30-year-old Reuben propels himself into the Illinois Statehouse, where he serves as an aggressive voice for organized labor.  This volume ends in 1930 with Soderstrom on the precipice of becoming the President of the ISFL, just as the Great Depression blankets the nation.
+          </p>
+        </div>
+      </div>
+      <div class="volume-subtitle-container white">
+        <h1>Preview</h1>
+      </div>
+      <div class="volume-image-white"></div>
+      <div class="volume-title-container white">
+        <h1>Volume II.</h1>
+      </div>
+      <div class="volume-text-container white">
+        <div class="volume-text-content white-text">
+          <p><span class="leader">This volume sees Soderstrom elected president</span> of the Illinois State Federation of Labor, a victory quickly complicated by the onset of the Great Depression, which threatens to destroy organized labor with devastating unemployment and the lurking forces of Communism. But Reuben rallies workers across Illinois—one of the nation’s most industrialized states—and holds the ISFL together by sheer will until Roosevelt’s New Deal helps turn the tide. World War II then brings a manufacturing boost powered by extraordinarily productive union men and women, strengthening Reuben’s Federation in Illinois and increasing his influence on the national stage. Soderstrom gains further advances for his growing membership as he successfully navigates the post-war strikes that hurt labor’s standing in the rest of the country. But political setbacks and eventual passage of the Taft-Hartley Act deliver a devastating blow to American unions, forcing Reuben and his Federation to consider new alliances with old foes to find a way forward.
+          </p>
+        </div>
+      </div>
+      <div class="volume-subtitle-container blue">
+        <h1>Preview</h1>
+      </div>
+      <div class="volume-image-blue"></div>
+      <div class="volume-title-container blue">
+        <h1>Volume III.</h1>
+      </div>
+      <div class="volume-text-container blue">
+        <div class="volume-text-content blue-text">
+          <p><span class="leader">This volume finds Reuben Soderstrom reeling</span> after the passage of the Taft-Hartley Act, forcing him to exert his formidable influence in Springfield and Washington to fight the tide of anti-labor legislation sweeping the country. He gains a welcome ally when he helps facilitate the great merger of the American Federation of Labor with the Congress of Industrial Organizations. Soderstrom emerges as president of the new Illinois AFL-CIO, one of the largest and most powerful state labor organizations in the country. From his new post Soderstrom leads labor through the prosperous 1950s and into the era of Civil Rights, working to heal divisions between workers of all colors, creeds, and faiths. A veteran leader in his 70s, Soderstrom develops personal relationships with Martin Luther King and Presidents Kennedy and Johnson as he leads more than 1 million Illinois union members into a new America era.  
+          </p>
+        </div>
+      </div>
+    </div>
+  </content>
+  <script>
+  $('[data-sidenav]').sidenav();
+  </script>
 </body>
 
 </html>
