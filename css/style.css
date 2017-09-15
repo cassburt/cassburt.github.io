@@ -1,6 +1,6 @@
 html, body {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5vh;
+  font-size: 16px;
   color: #000;
   background-color: #fcfcfc;
   height: 100%;
@@ -8,7 +8,6 @@ html, body {
 }
 
 a {
-  font-size: 1.5vh;
   text-decoration: none;
   color: #fff;
 }
@@ -20,20 +19,18 @@ a:hover {
 h1 {
   font-family: 'Playfair Display', serif;
   color: #000;
-  font-size: 2vh;
 }
 
 p {
   font-family: 'Raleway', sans-serif;
-  font-size: 1.15vh;
 }
-
 
 /* Main Nav */
 .nav-desktop {
   background-color: #000;
   padding: 0;
   width: 100%;
+  height: 3rem;
   position: relative;
 }
 
@@ -47,28 +44,56 @@ p {
 .nav-desktop .burger-menu {
   color: #fff;
   float: left;
-  padding: 1vh;
-  margin-left: 2.5vh;
+  font-size: 1.25em;
+  margin-left: 1em;
+  margin-top: .15em;
+  margin-bottom: .15em;
 }
 
 .owner-tag {
   color: #fff;
   float: left;
-  padding: 1vh;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.5em;
+  margin-left: 1em;
+  margin-top: .5em;
+  margin-bottom: .5em;
+  /*padding: 1vh;
   margin-left: .1vh;
   margin-top: .3vh;
-  font-family: 'Special Elite', cursive;
-  font-size: 2.5vh;
+  font-size: 2.5vh;*/
 }
 
 .nav-desktop .social-menu {
   color: #fff;
   float: right;
-  padding: 1vh;
-  margin-right: 2.5vh;
   font-family: 'Raleway', sans-serif;
+  /*padding: 1vh;
+  margin-right: 2.5vh;
   font-size: 1.5vh;
-  margin-top: .8vh;
+  margin-top: .8vh;*/
+}
+
+/*Banner */
+.banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 3rem;
+  background-color: #84754f;
+}
+
+.banner-content {
+
+}
+
+.banner-content h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5em;
+  text-align: center;
+  color: white;
+  text-shadow: 1px 0px #000;
 }
 
 /* Hero */
@@ -83,7 +108,6 @@ p {
   background-position: center;
   background-attachment: fixed;
   /*background-size: 100%;*/
-
 }
 
 .hero-content {
@@ -125,7 +149,7 @@ p {
 
 .button-background {
   background-color: #7f000a;
-  width: 35vh;
+  width: 20vh;
   text-align: center;
   margin: auto;
 }
@@ -135,7 +159,7 @@ p {
 	height: 8vh;
 	text-align: center;
   margin: auto;
-	width: 35vh;
+	width: 20vh;
 	cursor: pointer;
   font-family: 'Raleway', sans-serif;
   font-size: 2vh;
@@ -230,7 +254,7 @@ p {
   width: : 100%;
   height: 140vh;
   background-color: #000;
-  background-image: url(../img/praise.jpg);
+  background-image: url(../img/RGS-MLK-66per.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
@@ -250,7 +274,8 @@ p {
 .praise-content h1 {
   color: #84754f;
   font-size: 7vh;
-  text-shadow: 2px 2px #000;
+
+  text-shadow: 1px 0px #000;
   line-height: 2vh;
   margin-top: .5vh;
 }
@@ -282,7 +307,7 @@ p {
   font-family: 'Inknut Antiqua', serif;
   color: #84754f;
   font-size: 2vh;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 0px #000;
   line-height: 2.5vh;
   text-align: right;
   margin-top: 1vh;
@@ -327,7 +352,7 @@ p {
   font-size: 9vh;
   font-family: 'Playfair Display', serif;
   text-align: center;
-  text-shadow: 2px 2px #000;
+  text-shadow: 1px 0px #000;
   margin-top: 0vh;
   margin-bottom: 0vh;
   padding-top: 0vh;
@@ -352,7 +377,7 @@ p {
   font-family: 'Raleway', sans-serif;
   color: #fff;
   font-size: 2vh;
-  text-shadow: 1px 1px #000;
+  text-shadow: 1px 0px #000;
   line-height: 4vh;
   text-align: justify;
 }
@@ -405,4 +430,26 @@ p {
 
 .volume-previews .blue h1 {
   background-color: #012a36;
+}
+
+/*Smaller Media*/
+
+@media only screen and (max-width: 780px) {
+  .hero-container {
+    position: relative;
+    text-align: center;
+    width: : 100%;
+    height: 100vh;
+    background-color: #fff;
+    background-image: none;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    /*background-size: 100%;*/
+  }
+
+  .hero-content {
+    background-color: rgba(0, 0, 0, .7);
+    display: inline-block;
+  }
 }
