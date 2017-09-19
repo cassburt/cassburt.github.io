@@ -446,13 +446,15 @@ p {
 /*Smaller Media*/
 
 @media only screen and (max-width: 1024px){
-  .nav-desktop {
-    background-color: red;
-  }
 
   .nav-desktop .social-menu {
     display: none;
   }
+
+  .nav-desktop {
+    width: 3.75em;
+  }
+
   .nav-desktop .company-name {
     color: #fff;
     float: none;
@@ -463,6 +465,14 @@ p {
     margin-right: 1em;
     margin-top: .5em;
     margin-bottom: .5em;
+  }
+
+    .nav-desktop .company-name {
+      display: none;
+    }
+
+  .filler {
+    display: none;
   }
 
   .hero-img-mobile {
@@ -495,7 +505,7 @@ p {
 
   .hero-content h1 {
     color: #84754f;
-    font-size: 6.25em;
+    font-size: 3.5em;
     text-shadow: 1px 0px #000;
   }
 
@@ -503,14 +513,17 @@ p {
     display: none;
   }
 
-  /*.banner-content h1 {
-    font-size: 1.25em;
-  }*/
-
   .hero-content h2{
     font-size: 1.25em;
     text-shadow: none;
     color: black;
+  }
+
+  .mobile-button {
+    float: left;
+    position: fixed;
+    margin-top: 5em;
+    z-index: 100;
   }
 
 
