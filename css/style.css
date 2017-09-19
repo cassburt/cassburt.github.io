@@ -446,6 +446,10 @@ p {
 /*Smaller Media*/
 
 @media only screen and (max-width: 1024px){
+  .nav-desktop {
+    background-color: red;
+  }
+
   .nav-desktop .social-menu {
     display: none;
   }
