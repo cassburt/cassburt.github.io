@@ -226,36 +226,50 @@ p {
 
 /* Introduction */
 .introduction-container {
-  position: relative;
-  width: : 100%;
-  height: 78vh;
-  background-color: #fff;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  justify-content:flex-start;
+  -webkit-justify-content: center;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  width: 100%;
+  height: auto;
+  background-color: #000;
   background-image: url(../img/gavel.jpg);
-  background-size: 100%;
-  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
 }
 
 .introduction-content {
-  float: right;
-  max-width: 58%;
-  margin-top: 23vh;
-  margin-right: 5vh;
-  margin-bottom: 5vh;
-  padding: 5vh;
+  max-width: 50%;
   text-align: center;
+  margin-right: 3em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  padding-top: 3em;
 }
 
 .introduction-content p {
-  font-family: 'Raleway', sans-serif;
   color: #000;
-  font-size: 1.65vh;
-  line-height: 4vh;
+  font-family: 'Raleway', sans-serif;
+  font-size: calc(10px + .6vw);
+  line-height: calc(14px + 1.5vw);
   text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .introduction-content .leader {
   font-family: 'Special Elite', cursive;
-  font-size: 4vh;
+  font-size: calc(20px + 2vw);
+  line-height: calc(14px + 1.5vw);
 }
 
 /*Praise Section */
@@ -445,7 +459,7 @@ p {
 
 /*Smaller Media*/
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 768px){
 
   .nav-desktop .social-menu {
     display: none;
@@ -458,7 +472,7 @@ p {
     font-family: 'Special Elite', cursive;
     font-size: 1.5em;
     margin-left: 0em;
-    margin-right: 1em;
+    margin-right: 1.5em;
     margin-top: .5em;
     margin-bottom: .5em;
   }
@@ -505,6 +519,33 @@ p {
     font-size: 1.25em;
     text-shadow: none;
     color: black;
+  }
+
+  .introduction-container {
+    background-image: url(../img/gavel-portrait.png);
+    background-color: #fff;
+
+  }
+
+  .introduction-content{
+    /*background-color: rgba(0, 0, 0, .5);*/
+    max-width: 100%;
+    margin-right: 0em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+    padding-bottom: .25em;
+    padding-top: .25em;
+  }
+
+  .introduction-content p {
+    font-size: 1em;
+    line-height: 1.75em;
+    text-align: left;
+  }
+
+  .introduction-content .leader {
+    font-size: 2em;
+    line-height: 1em;
   }
 
 }
