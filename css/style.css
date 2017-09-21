@@ -35,7 +35,7 @@ h2 {
 p {
   color: #000;
   font-family: 'Josefin Slab', serif;
-  font-size: calc(12px + .5vw);
+  font-size: calc(12px + .7vw);
   line-height: calc(12px + 1.5vw);
   text-align: justify;
   margin-top: 0;
@@ -135,7 +135,6 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-
   background-image: url(../img/RGS-hero.jpg);
   background-size: cover;
   background-position: center;
@@ -326,10 +325,12 @@ p {
 .volumes-container {
   padding-top: 2vh;
   padding-bottom: 2vh;
+  padding-top: 0;
 }
 
 .volumes-content h1 {
   padding-bottom: .5em;
+  padding-top: 1em;
 }
 
 .volume-content {
@@ -339,6 +340,34 @@ p {
   padding-right: 3em;
   padding-bottom: 3em;
   padding-top: 1.5em;
+}
+
+.volume-content h1 {
+  color: #fff;
+}
+
+.volume-content p {
+  color: #fff;
+}
+
+.alt p {
+  color: #000;
+}
+
+.alt h1{
+  color: #000;
+}
+
+.v1{
+  background-color: #3c1518;
+}
+
+.v2{
+  background-color: #DAD4C8;
+}
+
+.v3 {
+  background-color: #012a36;
 }
 
 .spread {
