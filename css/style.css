@@ -135,7 +135,7 @@ p {
   justify-content: center;
   width: 100%;
   height: auto;
-  background-color: #000;
+
   background-image: url(../img/RGS-hero.jpg);
   background-size: cover;
   background-position: center;
@@ -381,19 +381,22 @@ p {
   .hero-container {
     padding-top: 0vh;
     padding-bottom: 0vh;
+    background-image: none;
+    background-color: #012a36;
   }
 
   .hero-content {
     background-color: #012a36;
     max-width: 100%;
     text-align: center;
-    margin-top: 0;
+    margin-top: -1px;
     margin-bottom: 0;
     margin-left: 0em;
     padding-left: 0em;
     padding-right: 0em;
     padding-bottom: 2em;
     padding-top: 1em;
+
   }
 
   .hero-content h1 {
@@ -410,6 +413,10 @@ p {
     font-size: 1.25em;
     text-shadow: none;
     color: #fff;
+  }
+
+  .button-background {
+    background-color: none;
   }
 
   .introduction-container {
@@ -429,8 +436,8 @@ p {
   }
 
   .introduction-content p {
-    font-size: 1.1em;
-    line-height: 1.6em;
+    font-size: 1em;
+    line-height: 1.5em;
     font-weight: 600;
     text-align: left;
   }
@@ -457,8 +464,8 @@ p {
   }
 
   .praise-content p {
-    font-size: 1.1em;
-    line-height: 1.6em;
+    font-size: 1em;
+    line-height: 1.5em;
     font-weight: 600;
     text-align: left;
   }
