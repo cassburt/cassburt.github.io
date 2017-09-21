@@ -2,7 +2,7 @@ html, body {
   font-family: 'Raleway', sans-serif;
   font-size: 16px;
   color: #000;
-  background-color: #fcfcfc;
+  background-color: #fff;
   height: 100%;
   margin: 0;
 }
@@ -33,10 +33,22 @@ h2 {
 }
 
 p {
+  color: #000;
   font-family: 'Josefin Slab', serif;
+  font-size: calc(12px + .5vw);
+  line-height: calc(12px + 1.5vw);
+  text-align: justify;
+  margin-top: 0;
+  margin-bottom: 0;
   hyphens: none;
 }
 
+.leader {
+  color: #000;
+  font-family: 'Special Elite', cursive;
+  font-size: calc(20px + 2vw);
+  line-height: calc(14px + 1.5vw);
+}
 
 /* Main Nav */
 
@@ -268,22 +280,6 @@ p {
   padding-top: 2em;
 }
 
-.introduction-content p {
-  color: #000;
-  font-family: 'Josefin Slab', serif;
-  font-size: calc(14px + .6vw);
-  line-height: calc(16px + 1.5vw);
-  text-align: justify;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
-.introduction-content .leader {
-  font-family: 'Special Elite', cursive;
-  font-size: calc(20px + 2vw);
-  line-height: calc(14px + 1.5vw);
-}
-
 /* Praise */
 
 .praise-container {
@@ -316,18 +312,9 @@ p {
   padding-bottom: .5em;
 }
 
-.praise-content p {
-  color: #000;
-  font-family: 'Josefin Slab', serif;
-  font-size: calc(14px + .6vw);
-  line-height: calc(16px + 1.5vw);
-  text-align: justify;
-  margin-top: 0;
-  margin-bottom: 0;
-}
-
 .praise-content .attribution {
   color: #84754f;
+  font-weight: 600;
   text-shadow: 1px 0px #000;
   text-align: right;
   padding-top: .5em;
@@ -345,14 +332,18 @@ p {
   padding-bottom: .5em;
 }
 
-.volumes-content h2 {
-  text-align: center;
-  color: #84754f;
-  font-size: calc(9px + 1.8vw);
-  text-shadow: 1px 0px #000;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: .5em;
+.volume-content {
+  margin-left: 5em;
+  margin-right: 5em;
+  padding-left: 3em;
+  padding-right: 3em;
+  padding-bottom: 3em;
+  padding-top: 1.5em;
+}
+
+.spread {
+  width: 100%;
+  height: auto;
 }
 
 /*Smaller Media*/
@@ -377,6 +368,7 @@ p {
 
   .hero-img-mobile {
     display: block;
+    background-color: #012a36;
     padding-left: 15px;
     padding-right: 15px;
   }
@@ -392,14 +384,14 @@ p {
   }
 
   .hero-content {
-    background-color: white;
+    background-color: #012a36;
     max-width: 100%;
     text-align: center;
     margin-top: 0;
     margin-bottom: 0;
     margin-left: 0em;
-    padding-left: 1em;
-    padding-right: 1em;
+    padding-left: 0em;
+    padding-right: 0em;
     padding-bottom: 2em;
     padding-top: 1em;
   }
@@ -417,20 +409,21 @@ p {
   .hero-content h2 {
     font-size: 1.25em;
     text-shadow: none;
-    color: black;
+    color: #fff;
   }
 
   .introduction-container {
     background-image: url(../img/gavel-portrait.png);
     background-color: #fff;
+    background-position: center;
 
   }
 
-  .introduction-content{
+  .introduction-content {
     max-width: 100%;
-    margin-right: 0em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    margin: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
     padding-bottom: .25em;
     padding-top: .25em;
   }
@@ -448,17 +441,17 @@ p {
   }
 
   .praise-container {
-    background-image: url(../img/RGS-MLK-portrait.jpg);
+    background-image: url(../img/MLK-RGS-portrait.jpg);
     background-color: #fff;
 
   }
 
   .praise-content {
-    background-color: rgba(255, 255, 255, 0);
+    background-color: rgba(255, 255, 255, .7);
     max-width: 100%;
-    margin: 0em;
-    padding-left: 1.5em;
-    padding-right: 1.5em;
+    margin: 1em;
+    padding-left: .5em;
+    padding-right: .5em;
     padding-bottom: .25em;
     padding-top: .25em;
   }
