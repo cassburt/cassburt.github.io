@@ -60,6 +60,10 @@ p {
 
 }
 
+.book-title {
+  font-style: italic;
+}
+
 /* Main Nav */
 
 .fb-image {
@@ -423,7 +427,8 @@ p {
 .volume-content p {
   color: #faecd2;
   font-weight: 600;
-  text-align: center;
+  text-align: justify;
+  padding-bottom: 1.5em;
 }
 
 .alt p {
@@ -463,59 +468,6 @@ p {
   padding-left: .5vw;
   padding-right: .5vw;
   margin: auto;
-}
-
-/*Read More button thanks to CodePen: https://codepen.io/Idered/pen/AeBgF */
-.read-more-state {
-  display: none;
-}
-
-.read-more-target {
-  opacity: 0;
-  max-height: 0;
-  font-size: 0;
-  transition: .25s ease;
-}
-
-.read-more-state:checked ~ .read-more-wrap .read-more-target {
-  opacity: 1;
-  font-size: inherit;
-  max-height: 999em;
-}
-
-.read-more-state ~ .read-more-trigger:before {
-  content: 'Learn more';
-}
-
-.read-more-state:checked ~ .read-more-trigger:before {
-  content: 'Show less';
-}
-
-.read-more-trigger {
-  cursor: pointer;
-  display: inline-block;
-  flex-direction: column;
-  justify-content: center;
-  padding: 0 .5em;
-  margin-top: .5em;
-  margin-bottom: 1em;
-  font-family: 'Special Elite', cursive;
-  font-size: 1.25em;
-  line-height: 2;
-  border: 1px solid #000;
-  color: #000;
-  background-color: #faecd2;
-  border-radius: .25em;
-}
-
-.v1 .read-more-trigger {
-  border: 1px solid #9b2c29;
-  color: #9b2c29;
-}
-
-.v3 .read-more-trigger {
-  border: 1px solid #4f5e88;
-  color: #4f5e88;
 }
 
 /*Smaller Media*/
