@@ -133,7 +133,7 @@ p {
   display: none;
 }
 .hero-section {
-  height: 85%;
+  height: auto;
   width: auto;
   background-image: url(../img/hero-light.jpg);
   background-size: cover;
@@ -149,7 +149,8 @@ p {
     justify-content: center;
     margin-left: 30px;
     margin-right: 30px;
-    height: 85%; /*added to master containers for FF, Edge*/
+    height: 100%; /*added to master containers for FF, Edge*/
+
   }
     .hero-container-text {
       width: 50%;
@@ -207,7 +208,7 @@ p {
       }
         .hero-content-img img {
           margin: auto;
-          height: 100%;
+          height: auto;
           width: 100%;
         }
 
@@ -311,7 +312,7 @@ p {
     }
       .intro-content-img img {
         margin: auto;
-        height: 100%;
+        height: auto;
         width: 100%;
       }
     .intro-container-text {
