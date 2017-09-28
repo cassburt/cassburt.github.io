@@ -133,7 +133,7 @@ p {
   display: none;
 }
 .hero-section {
-  height: auto;
+  height: 85%;
   width: auto;
   background-image: url(../img/hero-light.jpg);
   background-size: cover;
