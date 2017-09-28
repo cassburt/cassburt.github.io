@@ -61,6 +61,11 @@ p {
 }
 
 /* Main Nav */
+
+.fb-image {
+  display: none;
+}
+
 .filler {
   width:100%;
   height: 3rem;
@@ -77,6 +82,7 @@ p {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-right: 1em;
     overflow: hidden;
   }
 .nav-desktop .burger-menu {
@@ -146,7 +152,7 @@ p {
   .hero-container {
     display: flex; -webkit-flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content:center;
     margin-left: 30px;
     margin-right: 30px;
     height: 100%; /*added to master containers for FF, Edge*/
@@ -542,30 +548,50 @@ p {
   .mobile-hero {
     width: 100%;
     height: auto;
+    padding-top: .5em;
   }
 
-  .hero-container {
+  .hero-container-img {
+    display: none;
+  }
+
+  .hero-section {
     padding-top: 0vh;
     padding-bottom: 0vh;
     background-image: none;
     background-color: #4f5e88;
+    height:auto;
   }
 
-  .hero-content {
-    background-color: #4f5e88;
-    max-width: 100%;
+  .hero-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+  }
+
+  .hero-container-text {
+    background-color: #000;
+    width: 100%;
     text-align: center;
     margin-top: -1px;
-    margin-bottom: 0;
+    margin-bottom: 1em;
     margin-left: 0em;
     padding-left: 0em;
     padding-right: 0em;
-    padding-bottom: 2em;
-    padding-top: 1em;
-
+    padding-bottom: 0em;
+    padding-top: 0em;
+    display: block;
   }
 
-  .hero-content h1 {
+  .hero-content-text {
+  background-color: #4f5e88;
+  padding-left: 0em;
+  padding-right: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  }
+
+  .hero-content-text h1 {
     color: #92754d;
     font-size: 3.25em;
     padding-left: .2em;
@@ -576,7 +602,7 @@ p {
     display: none;
   }
 
-  .hero-content h2 {
+  .hero-content-text h2 {
     font-size: 1.25em;
     text-shadow: none;
     color: #faecd2;
