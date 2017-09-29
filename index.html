@@ -29,13 +29,15 @@
 </head>
 <body>
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
+  <script>
+    (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.10";
       fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'facebook-jssdk'));</script>
+    }(document, 'script', 'facebook-jssdk'));
+  </script>
   <nav class="sidenav" data-sidenav data-sidenav-toggle="#sidenav-toggle">
     <div class="sidenav-brand">
       Menu
@@ -180,7 +182,7 @@
             data-href="http://www.40gavels.com"
             data-layout="button"
             data-size="large"
-            data-mobile-iframe="false">
+            data-mobile-iframe="true">
             <a class="fb-xfbml-parse-ignore"
               target="_blank"
               href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fwww.40gavels.com%2F&amp;src=sdkpreparse">Share
