@@ -580,8 +580,8 @@ p {
   .intro-container-text {
     width: 100%;
     background-image: url(../img/gavel-portrait.png);
-    background-position: center;
-    background-size: 180%;
+    background-position: top;
+    background-size: 150%;
     background-repeat: no-repeat;
   }
 
