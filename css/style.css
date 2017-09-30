@@ -44,6 +44,10 @@ p {
 
 /* Universal stylings */
 
+.hide {
+  display: none;
+}
+
 .leader {
   color: #000;
   font-family: 'Special Elite', cursive;
@@ -341,7 +345,7 @@ p {
 
 /* Praise */
 
-.praise-section{
+.praise-section {
   background-image: url(../img/RGS-MLK-50.jpg);
   background-size: cover;
   background-position: top center;
@@ -559,42 +563,62 @@ p {
     background-color: none;
   }
 
-  .introduction-container {
+  .intro-section {
+    height: auto;
+  }
+
+  .intro-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    height: auto;
+  }
+
+  .intro-container-img {
+    display: none;
+  }
+
+  .intro-container-text {
+    width: 100%;
     background-image: url(../img/gavel-portrait.png);
-    background-color: #faecd2;
     background-position: center;
-
+    background-size: 180%;
+    background-repeat: no-repeat;
   }
 
-  .introduction-content {
+  .intro-content-text {
     max-width: 100%;
-    margin: 1em;
-    padding-left: .5em;
-    padding-right: .5em;
-    padding-bottom: .25em;
-    padding-top: .25em;
+    height: 100%;
+    padding: 2em;
+
   }
 
-  .introduction-content p {
+  .intro-content-text p {
     font-size: 1em;
     line-height: 1.5em;
     font-weight: 600;
     text-align: left;
   }
 
-  .introduction-content .leader {
+  .intro-content-text .leader {
     font-size: 2em;
     line-height: 1em;
   }
 
-  .praise-container {
+  .praise-section {
     background-image: url(../img/MLK-RGS-portrait.jpg);
-    background-color: #faecd2;
+    background-position: center;
 
   }
 
+  .praise-container {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .praise-content {
-    background-color: rgba(255, 255, 255, .7);
+    background-color: rgba(255, 255, 255, .8);
     max-width: 100%;
     margin: 1em;
     padding-left: .5em;
