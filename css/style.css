@@ -116,6 +116,10 @@ p {
 
 }
 
+.fb-share-button {
+  padding-bottom: 10px;
+}
+
 /*Banner */
 .banner-container {
   display: flex; -webkit-flex;
