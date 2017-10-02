@@ -116,9 +116,10 @@ p {
 
 }
 
-.fb-share-button {
-  padding-bottom: 10px;
-}
+.fb_iframe_widget span
+        {
+            vertical-align: baseline !important;
+        }
 
 /*Banner */
 .banner-container {
