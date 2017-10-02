@@ -144,7 +144,7 @@ p {
 .hero-section {
   height: 85%;
   width: auto;
-  background-image: url(../img/hero-light.jpg);
+  background-image: url(../img/hero-landscape.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
