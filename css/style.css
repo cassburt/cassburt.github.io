@@ -580,8 +580,8 @@ p {
   .intro-container-text {
     width: 100%;
     background-image: url(../img/gavel-portrait.png);
-    background-position: top;
-    background-size: 150%;
+    background-position: center;
+    background-size: 225%;
     background-repeat: no-repeat;
   }
 
@@ -593,7 +593,7 @@ p {
   }
 
   .intro-content-text p {
-    font-size: 1em;
+    font-size: 1.15em;
     line-height: 1.5em;
     font-weight: 600;
     text-align: left;
@@ -621,8 +621,8 @@ p {
     background-color: rgba(255, 255, 255, .8);
     max-width: 100%;
     margin: 1em;
-    padding-left: .5em;
-    padding-right: .5em;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
     padding-bottom: .25em;
     padding-top: .25em;
   }
@@ -633,7 +633,7 @@ p {
   }
 
   .praise-content p {
-    font-size: 1em;
+    font-size: 1.15em;
     line-height: 1.5em;
     font-weight: 600;
     text-align: left;
@@ -659,7 +659,7 @@ p {
   }
 
   .volume-content p {
-    font-size: 1em;
+    font-size: 1.15em;
     line-height: 1.5em;
     font-weight: 600;
     text-align: left;
