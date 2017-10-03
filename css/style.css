@@ -608,6 +608,7 @@ p {
   .praise-section {
     background-image: url(../img/MLK-RGS-portrait.jpg);
     background-position: center;
+    height: auto;
 
   }
 
@@ -616,6 +617,7 @@ p {
     margin-right: 0px;
     margin-top: 0px;
     margin-bottom: 0px;
+    height: auto;
   }
 
   .praise-content {
