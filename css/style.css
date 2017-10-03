@@ -116,11 +116,6 @@ p {
 
 }
 
-.fb_iframe_widget span
-        {
-            vertical-align: center !important;
-        }
-
 /*Banner */
 .banner-container {
   display: flex; -webkit-flex;
@@ -575,7 +570,7 @@ p {
   .intro-container {
     margin-left: 0px;
     margin-right: 0px;
-    height: auto;
+    height: 100%;
   }
 
   .intro-container-img {
@@ -586,7 +581,7 @@ p {
     width: 100%;
     background-image: url(../img/gavel-portrait.png);
     background-position: center;
-    background-size: 175%;
+    background-size: 100%;
     background-repeat: no-repeat;
   }
 
