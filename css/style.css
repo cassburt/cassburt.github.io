@@ -565,6 +565,7 @@ p {
 
   .intro-section {
     height: auto;
+    display: block;
   }
 
   .intro-container {
