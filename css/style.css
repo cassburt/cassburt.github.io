@@ -506,6 +506,9 @@ p {
       padding-right: 1.5em;
       padding-left: 1.5em;
       font-size: .75em;
+      font-family: 'Comfortaa', cursive;
+      font-weight: 300;
+      font-size: .75em;
     }
     .footer-content ul {
       list-style-type: none;
