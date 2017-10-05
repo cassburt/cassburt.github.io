@@ -505,8 +505,6 @@ p {
     .footer-content a {
       padding-right: 1.5em;
       padding-left: 1.5em;
-      font-family: 'Comfortaa', cursive;
-      font-weight: 300;
       font-size: .75em;
     }
     .footer-content ul {
@@ -516,7 +514,7 @@ p {
     }
     .footer-content .contact {
       font-weight: 400;
-      font-size: 1em;
+      font-size: 2em;
     }
 /*Smaller Media*/
 
