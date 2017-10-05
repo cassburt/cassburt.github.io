@@ -505,8 +505,6 @@ p {
     .footer-content a {
       padding-right: 1.5em;
       padding-left: 1.5em;
-      font-family: 'Comfortaa', cursive;
-      font-size: 1em;
     }
     .footer-content ul {
       list-style-type: none;
@@ -515,6 +513,8 @@ p {
     }
       .footer-content li {
         display: inline;
+        font-family: 'Comfortaa', cursive;
+        font-size: 1em;
       }
     .footer-content .contact {
       font-weight: 400;
