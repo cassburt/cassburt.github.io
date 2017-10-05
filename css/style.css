@@ -505,16 +505,17 @@ p {
     .footer-content a {
       padding-right: 1.5em;
       padding-left: 1.5em;
-      font-size: .75em;
       font-family: 'Comfortaa', cursive;
-      font-weight: 300;
-      font-size: .75em;
+      font-size: 1em;
     }
     .footer-content ul {
       list-style-type: none;
       overflow: hidden;
       margin-left: -2em;
     }
+      .footer-content li {
+        display: inline;
+      }
     .footer-content .contact {
       font-weight: 400;
       font-size: 2em;
