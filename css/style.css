@@ -722,3 +722,7 @@ p {
   }
 
 }
+
+.footer-content li {
+  display: block;
+}
