@@ -651,17 +651,17 @@ p {
   }
 
   .hero-content-text {
-    padding-top: 0em;
+    padding-top: 1em;
     padding-bottom: 3em;
     background-color: rgba(0,0,0,0);
   }
 
   .hero-content-text h1 {
-    font-size: calc(12px + 6.4vw);
+    font-size: calc(12px + 8vw);
   }
 
   .hero-content-text h2 {
-    font-size: calc(8px + 2vw);
+    font-size: calc(8px + 2.5vw);
   }
 
 
