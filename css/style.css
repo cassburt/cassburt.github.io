@@ -617,7 +617,7 @@ p {
 
   .hero-img-mobile-container {
     width: auto;
-    height: 59%;
+    height: 55%;
     display: block;
     flex-wrap: nowrap;
     flex-direction: column;
@@ -639,7 +639,7 @@ p {
   }
 
   .hero-container-text {
-    height: 41%;
+    height: 45%;
     width: 100%;
     display: block;
     background-color: rgba(0, 0, 0, .7);
