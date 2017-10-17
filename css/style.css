@@ -38,8 +38,8 @@ h2 {
 p {
   color: #000;
   font-family: 'Josefin Slab', serif;
-  font-size: calc(12px + .7vw);
-  line-height: calc(12px + 1.5vw);
+  font-size: calc(12px + .65vw);
+  line-height: calc(12px + 1.6vw);
   text-align: justify;
   margin-top: 0;
   margin-bottom: 0;
@@ -165,7 +165,7 @@ p {
 .hero-section {
   height: calc(100% - 6em);
   width: auto;
-  background-image: url(../img/hero-landscape.jpg);
+  background-image: url(../img/hero/background.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -174,7 +174,7 @@ p {
   justify-content: center;
 }
     .hero-container-text {
-      width: 50%;
+      width: 45%;
       height: auto;
       display: flex; -webkit-flex;
       flex-direction: column;
@@ -215,7 +215,7 @@ p {
           font-weight: 700;
         }
     .hero-container-img {
-      width: 42%;
+      width: 45%;
       height: auto;
       display: flex; -webkit-flex;
       flex-wrap: nowrap;
@@ -305,7 +305,7 @@ p {
 .intro-section {
   width: auto;
   height: 85%;
-  background-image: url(../img/poster.jpg);
+  background-image: url(../img/intro/background.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -360,7 +360,7 @@ p {
 /* Praise */
 
 .praise-section {
-  background-image: url(../img/RGS-MLK-50.jpg);
+  background-image: url(../img/praise/background.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -376,13 +376,17 @@ p {
 }
 
 .praise-content {
-  background-color: rgba(255, 255, 255, .7);
-  max-width: 45%;
+  background-color: rgba(0,0,0, .75);
+  max-width: 47%;
   text-align: center;
   padding-left: 2em;
   padding-right: 2em;
   padding-bottom: 1em;
   padding-top: 1em;
+}
+
+.praise-content p {
+  color: #fff;
 }
 
 .praise-content .first {
@@ -425,16 +429,6 @@ p {
   padding-bottom: .25em;
 }
 
-/*.volume-content h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: calc(12px + 2.4vw);
-  letter-spacing: 3.5px;
-  margin-top: .5em;
-  margin-bottom: 0em;
-  color: #faecd2;
-  padding-bottom: .25em;
-}*/
-
 .volume-content .subtitle {
   text-align: center;
   display: none;
@@ -470,19 +464,19 @@ p {
 
 .v1 {
   /*background-color: #9b2c29;*/
-  background-image: url(../img/fabric-red.jpg);
+  background-image: url(../img/about/vol-1/background.jpg);
   background-attachment: fixed;
 }
 
 .v2 {
   /*background-color: #faecd2;*/
-  background-image: url(../img/fabric-white.jpg);
+  background-image: url(../img/about/vol-2/background.jpg);
   background-attachment: fixed;
 }
 
 .v3 {
   /*background-color: #4f5e88;*/
-  background-image: url(../img/fabric-blue.jpg);
+  background-image: url(../img/about/vol-3/background.jpg);
   background-attachment: fixed;
 }
 
@@ -559,7 +553,7 @@ p {
 /* Authors */
 
 .author-section {
-  background-image: url(../img/news.jpg);
+  background-image: url(../img/authors/background.jpg);
   background-size: cover;
   background-position: top center;
   background-attachment: fixed;
@@ -655,7 +649,29 @@ p {
     }
 /*Smaller Media*/
 
-@media only screen and (max-width: 1024px){
+@media only screen and (max-width: 1366px) {
+  .hero-section {
+    background-image: url(../img/hero/background_1366.jpg);
+    background-attachment: local;
+  }
+  .intro-section { background-attachment:local; }
+  .praise-section {
+      background-image: url(../img/praise/background_mobile.jpg);
+      background-attachment:local;
+    }
+    .praise-container {
+      margin: 0;
+      height: auto;
+    }
+    .praise-content {
+      max-width: 100%;
+      padding-left: 6em;
+      padding-right: 6em;
+    }
+  .volume-container { background-attachment:local; }
+  .author-section { background-attachment:local; }
+}
+@media only screen and (max-width: 1024px) {
 
   p {
     font-size: calc(12px + 1.14vw);
@@ -700,8 +716,7 @@ p {
 
   .hero-section {
     height: calc(100% - 3em);
-    background-image: url(../img/hero-portrait-dark.jpg);
-    background-attachment:local;
+    background-image: url(../img/hero/background_mobile.jpg);
     background-position: top right;
     flex-direction: column;
     justify-content: center;
@@ -756,8 +771,7 @@ p {
   .intro-section {
     height: auto;
     display: block;
-    background-image: url(../img/gavel-mobile.jpg);
-    background-attachment:local;
+    background-image: url(../img/intro/background_mobile.jpg);
   }
   .intro-container {
     margin-left: 0px;
@@ -774,11 +788,7 @@ p {
     max-width: 100%;
     height: auto;
     padding: 2em;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .7);
 
   }
   .intro-content-text .leader {
@@ -786,34 +796,13 @@ p {
     line-height: 1em;
   }
 
-  .praise-section {
-    background-image: url(../img/MLK-RGS-portrait.jpg);
-    background-attachment:local;
-  }
-  .praise-container {
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    height: auto;
-  }
   .praise-content {
-    background-color: rgba(255, 255, 255, .8);
-    max-width: 100%;
-    margin-left: 1em;
-    margin-right: 1em;
-    margin-top: 2em;
-    margin-bottom: 2em;
-    padding: 2em;
-    padding-bottom: 1em;
-    padding-top: 1em;
+    padding-left: 2em;
+    padding-right: 2em;
   }
 
   .volume-content .subtitle {
     display: block;
-  }
-  .volume-container {
-    background-attachment:local;
   }
   .volume-content {
     max-width: 100%;
@@ -845,7 +834,6 @@ p {
 .author-section {
   padding-top: 0em;
   padding-bottom: 0em;
-  background-attachment:local;
 }
 .author-container {
   margin-left: 0em;
