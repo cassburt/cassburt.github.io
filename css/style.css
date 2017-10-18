@@ -710,23 +710,15 @@ p {
   }
   .intro-section { background-attachment:local; }
   .praise-section {
-      background-image: url(../img/praise/background_mobile.jpg);
-      background-attachment:local;
-    }
-    .praise-container {
-      margin: 0;
-      height: auto;
-    }
-    .praise-content {
-      max-width: 100%;
-      padding-left: 6em;
-      padding-right: 6em;
-    }
+    background-attachment:local;
+    background-size: 115%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
   .volume-container { background-attachment:local; }
   .author-section { background-attachment:local; }
 }
 @media only screen and (max-width: 1024px) {
-
   p {
     font-size: calc(12px + 1.14vw);
     line-height: calc(24px + 1.7vw);
@@ -856,6 +848,20 @@ p {
     padding-left: 2em;
     padding-right: 2em;
   }
+
+  .praise-section {
+      background-image: url(../img/praise/background_mobile.jpg);
+      background-attachment:local;
+    }
+    .praise-container {
+      margin: 0;
+      height: auto;
+    }
+    .praise-content {
+      max-width: 100%;
+      padding-left: 6em;
+      padding-right: 6em;
+    }
 
   .volume-content .subtitle {
     display: block;
