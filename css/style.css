@@ -194,6 +194,8 @@ p {
 
 .dropdown:hover .trigger {
     color: #92754d;
+    pointer-events: none;
+    cursor: default;
 }
 
 /*Banner */
