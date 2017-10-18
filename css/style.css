@@ -703,7 +703,7 @@ p {
     }
 /*Smaller Media*/
 
-@media only screen and (max-width: 1366px) {
+@media (pointer:coarse) {
   .hero-section {
     background-image: url(../img/hero/background_1366.jpg);
     background-attachment: local;
@@ -718,7 +718,8 @@ p {
   .volume-container { background-attachment:local; }
   .author-section { background-attachment:local; }
 }
-@media only screen and (max-width: 1024px) {
+
+@media only screen and (max-width: 768px), screen and (max-width: 1024px) and (orientation: portrait) {
   p {
     font-size: calc(12px + 1.14vw);
     line-height: calc(24px + 1.7vw);
@@ -818,7 +819,6 @@ p {
     height: auto;
     display: block;
     background-image: url(../img/intro/background_mobile.jpg);
-
   }
 
   .intro-container-img {
@@ -835,8 +835,6 @@ p {
     max-width: 100%;
     height: auto;
     padding: 2em;
-
-
 
   }
   .intro-content-text .leader {
@@ -911,7 +909,7 @@ p {
   }
 }
 
-@media only screen and (max-width: 1024px) and (orientation: landscape) {
+@media only screen and (max-width: 768px) and (orientation: landscape) {
   .hero-img-mobile-container {
     display: none;
   }
