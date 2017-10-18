@@ -116,14 +116,40 @@ p {
   margin-top: .5em;
 }
 
-.nav-desktop .company-name {
+.nav-desktop .main-menu {
   color: #fff;
   float: left;
   font-family: 'Special Elite', cursive;
   font-size: 1.5em;
   margin-left: 1em;
-  margin-top: .5em;
+  margin-top: .6em;
   margin-bottom: .5em;
+}
+
+.nav-desktop .home-key {
+  height: 1em;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.home-key .logo-img {
+  height: 1.5em;
+  width: auto;
+  margin-top: -.1em;
+}
+
+.home-key .gold {
+  display: none;
+}
+
+.home-key:hover .white {
+  display: none;
+}
+
+.home-key:hover .gold {
+  display: flex;
 }
 
 .nav-desktop .social-menu {
@@ -132,9 +158,42 @@ p {
   font-family: 'Josefin Slab', serif;
   font-size: 1.5em;
   margin-left: 1em;
-  margin-top: .5em;
+  margin-top: .6em;
   margin-bottom: .5em;
+}
 
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #000;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.nav-desktop .dropdown-content a {
+  color: #fff;
+  display: block;
+  font-family: 'Special Elite', cursive;
+  font-size: 1em;
+  padding-left: .5em;
+  padding-right: 1em;
+  padding-top: .25em;
+  padding-bottom: 0em;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+.nav-desktop .dropdown-content a:hover {
+  color: #000;
+  background-color: #fff;
+}
+
+.dropdown:hover .trigger {
+    color: #92754d;
 }
 
 /*Banner */
@@ -698,7 +757,7 @@ p {
     display: none;
   }
 
-  .nav-desktop .company-name {
+  .nav-desktop .main-menu {
     color: #FFF;
     float: none;
     text-align: center;
@@ -862,5 +921,9 @@ p {
   .hero-container-text h2 {
     margin-top: 1.15em;
     margin-bottom: 1.15em;
+  }
+
+  .hero-content-text h2 {
+    font-size: calc(8px + 1.75vw);
   }
 }
