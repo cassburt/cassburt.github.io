@@ -241,7 +241,7 @@ p {
   padding: 0;
   list-style: none;
 }
-#sidenav ul a li {
+#sidenav ul li {
   padding: 15px;
   display: flex;
   align-items: center;
@@ -249,21 +249,21 @@ p {
   border-width: 1px;
   border-color: #666;
 }
-#sidenav ul a .end {
+#sidenav ul .end {
   border-style: solid none solid none;
   border-width: 1px;
 }
-#sidenav ul a .sub {
+#sidenav ul .sub {
   border-style: none none none none;
   padding-left: 2em;
 }
 
-#sidenav ul a li span {
+#sidenav ul li span {
   color: #fff;
   font-family: 'Comfortaa', cursive;
   font-weight: 400;
 }
-#sidenav ul a li i {
+#sidenav ul li i {
   margin-right: 10px;
   color: #000;
 }

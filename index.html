@@ -67,15 +67,15 @@
       </div>
       <div>
         <ul id="side-list">
-          <a class="menu-select" href="#home"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Home</span></li></a>
-          <a id="select-intro" href="#intro"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>About</span></li></a>
-          <a id="select-praise" href="http://www.fortygavels.com#praise"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Praise</span></li></a>
-          <a href="#"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Inside</span></li></a>
-          <a href="#vol-1"><li class="sub"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume I</span></li></a>
-          <a href="#vol-2"><li class="sub"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume II</span></li></a>
-          <a href="#vol-3"><li class="sub"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume III</span></li></a>
-          <a href="#authors"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Authors</span></li></a>
-          <a href="#order"><li class="end"><i class="fa fa-gavel" aria-hidden="true"></i><span>Order</span></li></a>
+          <li id="select-home"><i class="fa fa-gavel" aria-hidden="true"></i><span>Home</span></li>
+          <li id="select-intro"><i class="fa fa-gavel" aria-hidden="true"></i><span>About</span></li>
+          <li id="select-praise"><i class="fa fa-gavel" aria-hidden="true"></i><span>Praise</span></li>
+          <li><i class="fa fa-gavel" aria-hidden="true"></i><span>Inside</span></li>
+          <li class="sub" id="select-vol-1"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume I</span></li>
+          <li class="sub" id="select-vol-2"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume II</span></li>
+          <li class="sub" id="select-vol-3"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume III</span></li>
+          <li id="select-authors"><i class="fa fa-gavel" aria-hidden="true"></i><span>Authors</span></li>
+          <li class="end" id="select-buy"><i class="fa fa-gavel" aria-hidden="true"></i><span>Order</span></li>
         </ul>
       </div>
     </div>
@@ -84,7 +84,7 @@
     </nav>
     <nav class="nav-desktop" id="main-nav">
       <ul>
-        <li class="main-menu"><a href="#home"><div class="home-key"><img class="logo-img white" src="img/logo-white.png" alt="logo-white"><img class="logo-img gold" src="img/logo-gold.png" alt="logo-gold"></div></a></li>
+        <li class="main-menu" id="select-home-dt"><a href="#home"><div class="home-key"><img class="logo-img white" src="img/logo-white.png" alt="logo-white"><img class="logo-img gold" src="img/logo-gold.png" alt="logo-gold"></div></a></li>
         <li class="main-menu"><a href="#intro">About</a></li>
         <li class="main-menu"><a href="#praise">Praise</a></li>
         <li class="main-menu">
@@ -312,11 +312,13 @@
     </section>
   </content>
   <script>
+
     //Lightbox
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
     });
+
     //Sidenav
     "use strict";
     var sidenav = new Sidenav({
@@ -327,11 +329,54 @@
     document.getElementById("menu-toggle").addEventListener("click", function() {
       sidenav.open();
     });
+    document.getElementById("select-home").addEventListener("click", function() {
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#home").offset().top
+      }, 1000);
+        });
+    });
     document.getElementById("select-intro").addEventListener("click", function() {
-      sidenav.close();
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#intro").offset().top
+      }, 1000);
+        });
     });
     document.getElementById("select-praise").addEventListener("click", function() {
-      sidenav.close();
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#praise").offset().top
+      }, 1000);
+        });
+    });
+    document.getElementById("select-vol-1").addEventListener("click", function() {
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#vol-1").offset().top
+      }, 1000);
+        });
+    });
+    document.getElementById("select-vol-2").addEventListener("click", function() {
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#vol-2").offset().top
+      }, 1000);
+        });
+    });
+    document.getElementById("select-vol-3").addEventListener("click", function() {
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#vol-3").offset().top
+      }, 1000);
+        });
+    });
+    document.getElementById("select-authors").addEventListener("click", function() {
+      sidenav.close() .then (function() {
+      $('html, body').animate({
+      scrollTop: $("#authors").offset().top
+      }, 1000);
+        });
     });
 
     //MS EDGE Stuttering problem
@@ -347,7 +392,7 @@
           });
     }
     //smoothScroll
-    $('#main-nav a').smoothScroll();
+    $('a').smoothScroll();
   </script>
   <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
