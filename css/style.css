@@ -100,7 +100,7 @@ p {
   background-color: rgba(0,0,0,.7);
   padding: 0;
   width: 100%;
-  height: 2em;
+  height: 3em;
   position: fixed;
   z-index: 90;
 }
@@ -822,14 +822,14 @@ p {
   }
 
   .filler {
-    height: 2em;
+    height: 3em;
   }
   .nav-mobile {
     display: block;
   }
 
   .hero-section {
-    height: calc(100% - 2em);
+    height: calc(100% - 3em);
     background-image: url(../img/hero/background_mobile.jpg);
     background-position: top right;
     flex-direction: column;
