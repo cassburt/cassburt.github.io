@@ -21,15 +21,14 @@
 <!-- Style Sheets -->
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa:300,400|Josefin+Slab:400,400i,600,600i,700|Playfair+Display|Special+Elite" />
-  <link rel='stylesheet' href='http://fonts.googleapis.com/icon?family=Material+Icons' type='text/css' />
   <link rel="stylesheet" href="css/sidenav.css" type="text/css" />
   <link rel="stylesheet" href="css/lightbox.css" type="text/css" />
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
 
 <!-- Scripts -->
   <script src="js/lightbox-plus-jquery.js"></script> <!--includes jquery-->
   <script src="https://use.fontawesome.com/8ba81ea2d1.js"></script>
-  <script src="js/sidenav.js"></script>
+  <script src="js/sidenav.min.js"></script>
   <script src="js/smooth-scroll.js"></script>
 </head>
 <body>
@@ -60,13 +59,31 @@
     }(document, "script", "twitter-wjs"));
   </script>
   <header>
+    <div id="backdrop"></div>
+    <div id="sidenav">
+      <div class="header">
+        <div class="title">Forty Gavels</div>
+        <img class="underline" src="img/svg/whitestar.svg" alt="underline">
+      </div>
+      <div>
+        <ul id="side-list">
+          <a class="menu-select" href="#home"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Home</span></li></a>
+          <a id="select-intro" href="#intro"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>About</span></li></a>
+          <a id="select-praise" href="http://www.fortygavels.com#praise"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Praise</span></li></a>
+          <a href="#"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Inside</span></li></a>
+          <a href="#vol-1"><li class="sub"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume I</span></li></a>
+          <a href="#vol-2"><li class="sub"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume II</span></li></a>
+          <a href="#vol-3"><li class="sub"><i class="fa fa-gavel" aria-hidden="true"></i><span>Volume III</span></li></a>
+          <a href="#authors"><li><i class="fa fa-gavel" aria-hidden="true"></i><span>Authors</span></li></a>
+          <a href="#order"><li class="end"><i class="fa fa-gavel" aria-hidden="true"></i><span>Order</span></li></a>
+        </ul>
+      </div>
+    </div>
+    <nav class="nav-mobile">
+      <div class="menu-burger" id="menu-toggle"><i class="fa fa-bars"></i><div>
+    </nav>
     <nav class="nav-desktop" id="main-nav">
       <ul>
-        <li class="burger-menu hide">
-          <a href="javascript:;" id="sidenav-toggle">
-            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-          </a>
-        </li>
         <li class="main-menu"><a href="#home"><div class="home-key"><img class="logo-img white" src="img/logo-white.png" alt="logo-white"><img class="logo-img gold" src="img/logo-gold.png" alt="logo-gold"></div></a></li>
         <li class="main-menu"><a href="#intro">About</a></li>
         <li class="main-menu"><a href="#praise">Praise</a></li>
@@ -77,7 +94,7 @@
               <a href="#vol-1">Volume I</a>
               <a href="#vol-2">Volume II</a>
               <a href="#vol-3">Volume III</a>
-          </div>
+            </div>
           </div>
         <li class="main-menu"><a href="#authors">Authors</a></li>
         <li class="main-menu"><a href="#order">Order</a></li>
@@ -119,7 +136,7 @@
       </ul>
     </nav>
   </header>
-  <content>
+  <content id="content">
     <div class="filler" id="home"></div>
     <div class="banner-container">
         <div class="banner-content">
@@ -138,7 +155,7 @@
             <img class="underline" src="img/svg/goldstar.svg" alt="underline">
             <h2>The Life of <span>Reuben Soderstrom</span><br>and the <span>Illinois AFL-CIO</span></h2>
             <div class="button-background">
-              <a href="www.google.com">
+              <a href="http://www.google.com">
                 <div class="btn btn-one">
                   <span>Buy Now</span>
                 </div>
@@ -295,11 +312,28 @@
     </section>
   </content>
   <script>
-    $('[data-sidenav]').sidenav();
+    //Lightbox
     lightbox.option({
       'resizeDuration': 200,
       'wrapAround': true
-    })
+    });
+    //Sidenav
+    "use strict";
+    var sidenav = new Sidenav({
+      content: document.getElementById("content"),
+      sidenav: document.getElementById("sidenav"),
+      backdrop: document.getElementById("backdrop")
+    });
+    document.getElementById("menu-toggle").addEventListener("click", function() {
+      sidenav.open();
+    });
+    document.getElementById("select-intro").addEventListener("click", function() {
+      sidenav.close();
+    });
+    document.getElementById("select-praise").addEventListener("click", function() {
+      sidenav.close();
+    });
+
     //MS EDGE Stuttering problem
     if(navigator.userAgent.match(/Trident\/7\./)) { // if IE
           $('body').on("mousewheel", function () {
@@ -312,9 +346,9 @@
               window.scrollTo(0, currentScrollPosition - wheelDelta);
           });
     }
-    $('a').smoothScroll();
+    //smoothScroll
+    $('#main-nav a').smoothScroll();
   </script>
   <script async defer src="//assets.pinterest.com/js/pinit.js"></script>
 </body>
-
 </html>
