@@ -1001,7 +1001,7 @@ p {
     margin-top: 1.15em;
     margin-bottom: 1.15em;
   }
-  /*.hero-content-text h2 {
+  .hero-content-text h2 {
     font-size: calc(8px + 1.75vw);
-  }*/
+  }
 }
