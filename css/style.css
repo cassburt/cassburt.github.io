@@ -119,10 +119,8 @@ p {
   height: 3em;
   position: fixed;
   z-index: 90;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
 }
+
   .nav-desktop ul {
     list-style-type: none;
     margin: 0;
@@ -131,30 +129,28 @@ p {
     overflow: hidden;
   }
 
-
 .nav-desktop .main-menu {
   color: #fff;
   float: left;
   font-family: 'Special Elite', cursive;
-  font-size: 1.15em;
+  font-size: 1em;
   margin-left: 1em;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  margin-top: 1em;
+  margin-bottom: .5em;
 }
 
 .nav-desktop .home-key {
+  height: 1em;
   float: left;
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
-  margin-top: -.3em;
 }
 
 .home-key .logo-img {
-  height: 1.5em;
+  height: 1.25em;
   width: auto;
+  margin-top: -.25em;
 }
 
 .home-key .gold {
@@ -169,17 +165,14 @@ p {
   display: flex;
 }
 
-.nav-desktop .main-menu {
-  padding-top: .5em;
-}
-
 .nav-desktop .social-menu {
   color: #fff;
   float: right;
   font-family: 'Josefin Slab', serif;
   font-size: 1.5em;
   margin-left: 1em;
-  margin-top: .3em;
+  margin-top: .6em;
+  margin-bottom: .5em;
 }
 
 .dropdown:hover .dropdown-content {
@@ -284,7 +277,7 @@ p {
 }
 
 #sidenav ul li:hover i {
-    color: #92754d;;
+    color: #92754d;
 }
 
 /*Banner */
