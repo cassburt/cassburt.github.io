@@ -21,20 +21,20 @@
 <!-- Style Sheets -->
   <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" type="text/css" />
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,600,600i|Source+Sans+Pro:300,400" rel="stylesheet">
-  <link rel="stylesheet" href="css/sidenav.css" type="text/css" />
-  <link rel="stylesheet" href="css/lightbox.css" type="text/css" />
-  <link rel="stylesheet" href="css/animate.css" type="text/css" />
-  <link rel="stylesheet" href="css/style.css?ver=2.0" type="text/css" />
+  <link rel="stylesheet" href="../css/sidenav.css" type="text/css" />
+  <link rel="stylesheet" href="../css/lightbox.css" type="text/css" />
+  <link rel="stylesheet" href="../css/animate.css" type="text/css" />
+  <link rel="stylesheet" href="style.css?ver=2.0" type="text/css" />
 
 <!-- Scripts -->
-  <script src="js/lightbox-plus-jquery.js"></script> <!--includes jquery-->
+  <script src="../js/lightbox-plus-jquery.js"></script> <!--includes jquery-->
   <script src="https://use.fontawesome.com/8ba81ea2d1.js"></script>
-  <script src="js/sidenav.min.js"></script>
-  <script src="js/smooth-scroll.js"></script>
-  <script src="js/jquery.fittext.js"></script>
-  <script src="js/jquery.lettering.js"></script>
-  <script src="js/jquery.textillate.js"></script>
-  <script src="js/jquery.sticky.js"></script>
+  <script src="../js/sidenav.min.js"></script>
+  <script src="../js/smooth-scroll.js"></script>
+  <script src="../js/jquery.fittext.js"></script>
+  <script src="../js/jquery.lettering.js"></script>
+  <script src="../js/jquery.textillate.js"></script>
+  <script src="../js/jquery.sticky.js"></script>
 
 </head>
 <body>
@@ -43,7 +43,7 @@
     <div id="sidenav">
       <div class="header">
         <div class="title">Forty Gavels</div>
-        <img class="underline" src="img/svg/whitestar.svg" alt="underline">
+        <img class="underline" src="../img/svg/whitestar.svg" alt="underline">
       </div>
       <div>
         <ul id="side-list">
@@ -62,14 +62,14 @@
     <nav class="nav-mobile">
       <div class="menu-burger" id="menu-toggle"><i class="fa fa-bars fa-2x"></i><div>
     </nav>
-    <nav class="nav-desktop" id="main-nav">
+    <nav class="nav-desktop">
       <ul>
-        <li class="main-menu clear"><a href="index.html#headliner"><div class="home-key"><img class="logo-img white" src="img/logo-white-1.png" alt="logo-white"><img class="logo-img gold" src="img/logo-gold-1.png" alt="logo-gold"></div></a></li>
+        <li class="main-menu clear"><a href="../index.html#headliner"><div class="home-key"><img class="logo-img white" src="../img/logo-white-1.png" alt="logo-white"><img class="logo-img gold" src="../img/logo-gold-1.png" alt="logo-gold"></div></a></li>
         <li class="main-menu">
           <div class="dropdown">
-            <a href="bio/index.html">Biography</a>
+            <a class="trigger" href="#">Biography</a>
             <div class="dropdown-content animated fadeIn">
-              <a href="bio/index.html">Reuben Soderstrom</a>
+              <a href="#vol-1">Reuben Soderstrom</a>
               <a href="#vol-2">Illinois AFL-CIO</a>
               <a class="bottom" href="#vol-3">The Soderstrom Family</a>
             </div>
@@ -98,63 +98,42 @@
         <a href="#authors"><li class="main-menu"><span>News and Events</span></li></a>
       </ul>
     </nav>
+    <div class="filler"></div>
   </header>
   <content id="content">
-    <div class="filler" id="home"></div>
     <section class="hero-section">
       <div class="hero-img-mobile-container">
         <div class="hero-img-mobile-content">
-          <img class="mobile-hero" src="img/hero/books_mobile.png" alt="books-vertical" data-pin-description="FORTY GAVELS by Carl Soderstrom, Robert Soderstrom, Chris Stevens, and Andrew Burt">
+          <img class="mobile-hero" src="../img/hero/books_mobile.png" alt="books-vertical" data-pin-description="FORTY GAVELS by Carl Soderstrom, Robert Soderstrom, Chris Stevens, and Andrew Burt">
         </div>
-      </div>
-      <div class="hero-container-text animated fadeInLeft">
-        <div class="hero-content-text">
-          <div class="quote">
-            <ul class='texts'>
-              <li>“Let us fight on! The labor union spirit of justice, right, and humanity inspired this deathless cause. Organized labor fights to establish social and economic justice, as well as old-age security; to abolish low wages and standards, poverty, intolerance, misery; to ensure that every person is given an equal opportunity to enjoy peace, happiness, success, and security.”</li>
-              <li>“The future is ours. What we do today determines how the world shall go. Tomorrow is made up of the sum total of today’s experiences. No one knows how slight a change may reshape the pattern to our heart’s desire. Far from feeling hopeless or helpless, we must seize every opportunity, however small, to help the world.”</li>
-              <li>“The Labor Movement means more than shorter hours, higher wages, and improved working conditions. It means the intellectual development of wage earners, who carry that independence from work into daily life. The trade unionist is interested in every political, social, and economic question; by his constructive statesmanship, he demands democracy shall function.”</li>
-            </ul>
-          </div>
-        </div>
-        <div id="down-arrow"><a href="#headliner"><img id="down-arrow-img" src="img/menu/down.png" /></a></div>
       </div>
     </section>
-    <a class="anchor" id="headliner"></a>
-    <section class="headline" id="topBar">
-        <h1>Reuben G. Soderstrom Foundation</h1>
+    <section class="headline" id="headliner">
+        <h1>Biography</h1>
     </section>
     <section class="intro-section" id="intro">
       <div class="intro-container-TOC">
         <div class="intro-content-TOC">
             <div class="TOC-link">
-              <a href="bio/index.html"><img src="img/sect/bio.jpg" alt="family_photo"></a>
+              <a href="#"><img src="RGS.jpg" alt="reuben_soderstrom"></a>
+              <h1>Reuben Soderstrom</h1>
+              <p>For more than forty years, Soderstrom was a pillar of organized labor in Illinois. As president, he steered of the Illinois State Federation of Labor through depression, division, and war, ultimately guiding it to unprecedented prosperity and influence. His legislative accomplishments bettered the lives of workers not just in Illinois but across the nation. By the time he was honored as President Emeritus in 1970, Reuben had become one of organized labor’s most prolific leaders, leaving a legacy that endures to this day.</p>
+              <button>Learn More</button>
             </div>
             <div class="TOC-link">
-              <img src="img/sect/lib.jpg" alt="isfl_books">
+              <a href="#"><img src="IL-AFL-CIO.jpg" alt="illinois_afl_cio"></a>
+              <h1>Illinois AFL-CIO</h1>
+              <p>For more than forty years, Soderstrom was a pillar of organized labor in Illinois. As president, he steered of the Illinois State Federation of Labor through depression, division, and war, ultimately guiding it to unprecedented prosperity and influence. His legislative accomplishments bettered the lives of workers not just in Illinois but across the nation. By the time he was honored as President Emeritus in 1970, Reuben had become one of organized labor’s most prolific leaders, leaving a legacy that endures to this day.</p>
+              <button>Learn More</button>
             </div>
             <div class="TOC-link">
-              <img src="img/sect/events.jpg" alt="streator_parade">
-            </div>
-        </div>
-        <div class="intro-content-TOC">
-            <div class="TOC-link">
-              <a href="#"><img src="img/sect/plaza.jpg" alt="streator_plaza"></a>
-            </div>
-            <div class="TOC-link">
-              <img src="img/sect/book.jpg" alt="forty_gavels">
-            </div>
-            <div class="TOC-link">
-              <img src="img/sect/press.jpg" alt="poster">
+              <a href="#"><img src="family.jpg" alt="soderstrom_family"></a>
+              <h1>Soderstrom Family</h1>
+              <p>For more than forty years, Soderstrom was a pillar of organized labor in Illinois. As president, he steered of the Illinois State Federation of Labor through depression, division, and war, ultimately guiding it to unprecedented prosperity and influence. His legislative accomplishments bettered the lives of workers not just in Illinois but across the nation. By the time he was honored as President Emeritus in 1970, Reuben had become one of organized labor’s most prolific leaders, leaving a legacy that endures to this day.</p>
+              <button>Learn More</button>
             </div>
         </div>
       </div>
-        <div class="intro-container-text">
-          <div class="intro-content-text">
-            <p>The RGS Foundation is dedicated to preserving and promoting the work and vision of Illinois Labor's most prolific advocate, Illinois AFL-CIO President Reuben G. Soderstrom. Our <a>biographical pages</a> provide introductory details on the life and legacy of Reuben Soderstrom, his family, and close associates. The <a>digital archive</a> is the TEXTprimary repository for textual and audiovisual records of Soderstrom's life of public service, from his first term as an Illinois State Representative to his 40-year tenure as President of the Illinois AFL and Illinois AFL-CIO. Click on our <a>news and events</a> section to learn more about the latest news and information concerning President Soderstrom's legacy, including his <a>statue dedication</a> and release of his <a>three-volume biography, Forty Gavels</a>.
-    				</p>
-          </div>
-        </div>
     </section>
     <section class="footer-section">
       <div class="footer-container">
@@ -289,6 +268,11 @@
     //smoothScroll
     $('a').smoothScroll();
 
+    //sticky
+    $(document).ready(function(){
+      $("#headliner").sticky({topSpacing:48});
+    });
+    
   </script>
 </body>
 </html>
